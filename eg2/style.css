@@ -9,7 +9,6 @@ body{
 	background: linear-gradient(90deg, rgba(6,67,152,0.9416141456582633) 0%, rgba(61,9,121,1) 46%, rgba(149,14,172,1) 100%);
 }
 
-
 .container{
 	display: flex;
 	height: 550px;
@@ -18,19 +17,66 @@ body{
 	margin: auto;
 	margin-top: 30px;
 	border-radius: 20px;
-	background-color: lightblue;
+	background-color: whitesmoke;
+	border-radius: 20px;
 }
+
+.left{
+	display: flex;
+/*	background-color: blue;*/
+	width: 65%;
+}
+
 
 .form{
 	display: flex;
 	flex-direction: column;
 	width: 70%;
 /*	align-items: center;*/
-	background-color: whitesmoke;
+/*	background-color: whitesmoke;*/
 	border-radius: 20px;
 	padding-left: 20px;
 
 }
+
+.left p{
+	margin-left: 15px;
+}
+
+.box{
+	padding: 12px;
+	width: 80%;
+	margin: 15px;
+	border: 1px solid black;
+	outline: none;
+	border-radius: 10px;
+}
+
+.form label{
+	margin-left: 15px;
+}
+
+#submit{
+	padding: 12px 40px;
+	width: 50%;
+	background-color: #f2aaef;
+	color: white;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	margin-left: 50px;
+}
+
+.form a{
+	text-decoration: none;
+	color: skyblue;
+	margin-top: 20px;
+/*	justify-content: center;*/
+/*	margin-left: 50px;*/
+
+}
+
 
 .sign-btn{
 	display: flex;
@@ -52,6 +98,7 @@ body{
 	
 }
 
+
 .form h3{
 	font-size: 2rem;
 	margin: 15px;
@@ -64,31 +111,6 @@ body{
 
 }
 
-.box{
-	padding: 12px;
-	width: 80%;
-	margin: 15px;
-	border: 1px solid black;
-	outline: none;
-	border-radius: 20px;
-}
-
-.form label{
-	margin-left: 15px;
-}
-
-#submit{
-	padding: 12px 30px;
-	width: 40%;
-	background-color: #f2aaef;
-	color: white;
-	font-weight: bold;
-	border: none;
-	outline: none;
-	border-radius: 20px;
-	margin-left: 40px;
-}
-
 .form a{
 	text-decoration: none;
 	color: skyblue;
@@ -99,17 +121,38 @@ body{
 }
 
 
-/*image style */
-
-.rside{
+.right{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-/*	background-color: blue;*/
+	background-color: #41b5a9;
+	width: 35%;
+	border-radius: 20px;
 }
 
-.rside img{
-	width: 450px;
-	height: 450px;
+.imgcss{
+	display: flex;
+	margin-left: -300px;
+	justify-content: center;
+	align-items: center;
+/*	width: 80%;*/
+}
+
+
+
+@media(max-width:512px){
+	
+	.right{
+		display: none;
+	}
+
+	.container{
+	display: flex;
+	height: 100vh;
+/*	width: 670px;*/
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 30px;
+	border-radius: 20px;
+	background-color: whitesmoke;
+	border-radius: 20px;
+}
 }
